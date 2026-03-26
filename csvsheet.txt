@@ -1,0 +1,36 @@
+class Contact:
+    def __init__(self, name, phone, email):
+        # store the details
+
+class ContactBook:
+    def __init__(self):
+        # load contacts from csv on startup
+    
+    def add(self, contact):
+    def delete(self, name):
+    def search(self, name):
+    def view_all(self):
+    def save(self):  # write all contacts back to csv
+
+    contacts_app/
+├── main.py          # menu loop, user input
+├── contact.py       # Contact class, ContactBook class
+└── contacts.csv     # created automatically on first run
+
+The CSV contact book — here's what it should do:
+Features:
+
+Add a contact (name, phone, email)
+View all contacts
+Search by name
+Delete a contact
+All saved to a contacts.csv file so it persists
+
+Why this project specifically: it forces you to use everything from Stage 2 naturally:
+
+csv module for file handling
+Classes for the Contact and ContactBook objects
+Error handling for missing files, duplicate entries
+Modules — split into contact.py and main.py
+String formatting for displaying contacts neatly
+Regex to validate email and phone number format
